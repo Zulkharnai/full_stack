@@ -5,10 +5,13 @@ let gamesList = [
   "Memory Game",
   "Pong Game",
   "Minesweeper Game",
+  "Simon Game",
+  "Dice Game",
+  "Drum Kit Game",
 ];
 let dashboardAudio = new Audio("./assets/game_dashboard.mp3");
 let gameItemAudio = new Audio("./assets/option.wav");
-let gameVideoPath = "./assets/dashboard.mp4";
+let gameVideoPath = "./assets/videoplayback.mp4";
 
 dashboardAudio.loop = true;
 dashboardAudio.volume = 0.5;
@@ -51,6 +54,8 @@ gameItems.forEach((item) => {
   });
 });
 
+// Game Video Background
+
 let gameVideo = document.getElementById("game-video");
 
 let video = document.createElement("video");
@@ -61,3 +66,6 @@ video.autoplay = true;
 video.muted = true; // needed for autoplay in browsers
 
 gameVideo.appendChild(video);
+
+
+

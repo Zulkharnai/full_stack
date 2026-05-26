@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#game-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+#game-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#snake-game {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  height: 600px;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  border: 2px solid white;
+
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+
+  z-index: 10;
+}
+
+#snake-game #snake img {
+  width: 5vh;
+  height: 5vh;
+}
+
+.snake-part {
+  background: limegreen;
+  border: 1px solid black;
+}
+
+/* food */
+.food {
+  background: red;
+  border-radius: 50%;
+}
