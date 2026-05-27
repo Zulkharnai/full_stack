@@ -17,9 +17,17 @@ dashboardAudio.loop = true;
 dashboardAudio.volume = 0.5;
 dashboardAudio.preload = "auto";
 dashboardAudio.load();
+dashboardAudio.play();
 
 function startAudio() {
-  dashboardAudio.play();
+  dashboardAudio
+    .play()
+    .then(() => {
+      console.log("Audio playing");
+    })
+    .catch((err) => {
+      console.log("Blocked by browser:", err);
+    });
 }
 
 document.addEventListener("click", startAudio, { once: true });
@@ -66,6 +74,3 @@ video.autoplay = true;
 video.muted = true; // needed for autoplay in browsers
 
 gameVideo.appendChild(video);
-
-
-

@@ -10,11 +10,26 @@
     <div id="game-video">
       <!-- <video></video> -->
 
-      <div id="snake-game">
-        <div id="snake"></div>
+      <div>
+        <dialog id="dialog">
+          <h2>Game Over</h2>
+          <button id="dialog-close">Close</button>
+        </dialog>
+        <div id="control">
+          <img src="../assets/back.png" alt="pause" id="back" />
+          <img src="../assets/play.png" alt="play" id="play" />
+          <img src="../assets/pause.png" alt="pause" id="pause" />
+          <img src="../assets/speaker.png" alt="pause" id="speaker" />
+          <img src="../assets/mute.png" alt="pause" id="mute" />
+        </div>
+
+        <div id="snake-game">
+          <div id="snake"></div>
+        </div>
       </div>
     </div>
 
     <script src="./script.js"></script>
+    <script src="../utils/global.js"></script>
   </body>
 </html>
