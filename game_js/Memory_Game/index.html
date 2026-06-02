@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dice Game</title>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../utils/global.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="game-video">
+      <div>
+        <dialog id="dialog">
+          <h2>Game Over</h2>
+          <div id="result"></div>
+          <button id="dialog-close">Close</button>
+        </dialog>
+
+        <div id="control">
+          <img src="../assets/back.png" alt="pause" id="back" />
+          <img src="../assets/restart.png" alt="restart" id="restart" />
+          <img src="../assets/speaker.png" alt="pause" id="speaker" />
+          <img src="../assets/mute.png" alt="pause" id="mute" />
+        </div>
+
+        <div id="div-game">
+          <div id="game-board">score = <span id="score">0</span></div>
+
+          <div id="game-img">
+            <img src="../assets/animal-1.png" alt="" />
+            <img src="../assets/animal-2.png" alt="" />
+            <img src="../assets/animal-3.png" alt="" />
+            <img src="../assets/animal-4.png" alt="" />
+            <img src="../assets/animal-5.png" alt="" />
+            <img src="../assets/animal-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../utils/global.js"></script>
+  </body>
 </html>

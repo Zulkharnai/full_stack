@@ -8,6 +8,7 @@ let gamesList = [
   "Simon Game",
   "Dice Game",
   "Drum Kit Game",
+  "Typeing Speed Game",
 ];
 let dashboardAudio = new Audio("./assets/game_dashboard.mp3");
 let gameItemAudio = new Audio("./assets/option.wav");
