@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../utils/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="game-video">
+      <div>
+        <dialog id="dialog">
+          <h2>Game Over</h2>
+          <div id="result"></div>
+          <button id="dialog-close">Close</button>
+        </dialog>
+
+        <div id="control">
+          <img src="../assets/back.png" alt="pause" id="back" />
+          <img src="../assets/play.png" alt="play" id="play" />
+          <img src="../assets/pause.png" alt="pause" id="pause" />
+          <img src="../assets/speaker.png" alt="pause" id="speaker" />
+          <img src="../assets/mute.png" alt="pause" id="mute" />
+        </div>
+
+        <div id="div-game">
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+          <div class="game-cell"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../utils/global.js"></script>
+  </body>
 </html>

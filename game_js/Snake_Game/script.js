@@ -86,15 +86,15 @@ function moveSnake() {
 /* ---------------- CONTROLS ---------------- */
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowUp") {
-    dx = 0;
-    dy = -1;
-  }
+  // if (event.key === "ArrowUp") {
+  //   dx = 0;
+  //   dy = -1;
+  // }
 
-  if (event.key === "ArrowDown") {
-    dx = 0;
-    dy = 1;
-  }
+  // if (event.key === "ArrowDown") {
+  //   dx = 0;
+  //   dy = 1;
+  // }
 
   if (event.key === "ArrowLeft") {
     dx = -1;

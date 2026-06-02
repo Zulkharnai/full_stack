@@ -1,0 +1,25 @@
+#div-game {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  width: 600px;
+  height: 600px;
+
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.game-cell {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  cursor: pointer;
+  color: white;
+}
