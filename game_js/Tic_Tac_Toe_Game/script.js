@@ -1,4 +1,7 @@
 const cells = document.querySelectorAll(".game-cell");
+const dialog = document.getElementById("dialog");
+let closeDialogBtn = document.getElementById("dialog-close");
+let restartButton = document.getElementById("restart");
 let currentPlayer = "X";
 let gameActive = true;
 const winningConditions = [
@@ -38,14 +41,29 @@ function checkWin() {
       cells[a].textContent === cells[b].textContent &&
       cells[a].textContent === cells[c].textContent
     ) {
-      console.log(`Player ${cells[a].textContent} wins!`);
+      showDialog(`Player ${cells[a].textContent} wins!`);
       return;
     }
   }
 }
+
+function showDialog(message) {
+  const dialogMessage = document.getElementById("result");
+  dialogMessage.textContent = message;
+  dialog.showModal();
+}
+
+closeDialogBtn.addEventListener("click", () => {
+  dialog.close();
+  resetGame();
+});
 
 function resetGame() {
   cells.forEach((cell) => (cell.textContent = ""));
   currentPlayer = "X";
   gameActive = true;
 }
+
+restartButton.addEventListener("click", () => {
+  resetGame();
+});

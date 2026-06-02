@@ -3,9 +3,6 @@ let gameVideoPath = "../assets/videoplayback.mp4";
 let speaker = document.getElementById("speaker");
 let mute = document.getElementById("mute");
 let back = document.getElementById("back");
-let pauseButton = document.getElementById("pause");
-let playButton = document.getElementById("play");
-pauseButton.style.display = "none";
 let speakerPlay = true;
 
 speaker.style.display = "none";
