@@ -1,0 +1,62 @@
+/* .layout {
+  width: 100%;
+  height: 100vh;
+} */
+
+.logo {
+  width: 100%;
+  background-color: rgb(82, 82, 221);
+  color: white;
+}
+
+.logo h1 {
+  padding: 5px;
+}
+
+.navigation {
+  width: 100%;
+  background-color: rgb(71, 125, 175);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: 30vh;
+  background-color: #c9c9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(82, 221, 82);
+}
+
+.sideBar {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(221, 82, 82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  height: 9vh;
+  background-color: rgb(82, 82, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
