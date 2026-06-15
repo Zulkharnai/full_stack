@@ -1,32 +1,17 @@
 import React from "react";
 import "./Layout.css";
+import SideBar from "../../components/SideBar/SideBar";
+import Header from "../../components/Header/Header";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <div style={{ height: "100vh" }}>
-      <div className="logo">
-        <h1>Logo</h1>
-      </div>
-      <div className="navigation">
-        <h2>Navigation</h2>
-      </div>
+    <div className="layout">
+      <SideBar />
 
-      <div className="banner">
-        <h1>Header/Banner</h1>
-      </div>
-
-      <div className="content">
-        <div className="sideBar">
-          <h1>Side Bar</h1>
-        </div>
-
-        <div className="mainContent">
-          <h1>Main Content</h1>
-        </div>
-      </div>
-
-      <div className="footer">
-        <h1>Footer</h1>
+      <div className="main-content">
+        <Header />
+        <Outlet />
       </div>
     </div>
   );
